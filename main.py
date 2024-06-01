@@ -8,7 +8,8 @@ bot = telebot.TeleBot(token)
 
 
 @bot.message_handler(commands=["start"])
-def start(message): ...
+def start(message):
+    print('Hello World')
 
 
 @bot.callback_query_handler(func=lambda call: True)
